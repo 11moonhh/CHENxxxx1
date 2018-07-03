@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.header {
+    width: 100%;
+    height: 93px;
+}
+
+.container {
+    height: 100%;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    background: url("images/logo.png") no-repeat center;
+    width: 50px;
+    height: 100%;
+    margin-left: 25px;
+}
+
+ul {
+    list-style-type: none;/*去掉li的点*/
+}
+
+.header .menu {
+    float: right;
+    position: relative;
+    top: calc(50% - 17.5px);
+
+}
+
+.header .menu li {
+    float: left;
+    margin-left: 10px;
+    width: 80px; /*宽度*/
+    height: 35px; /*高度*/
+    line-height: 35px; /*垂直居中*/
+    text-align: center; /*水平居中*/
+    font-size: 14px; /*字体大小*/
+    color: #4b4b4b;
+    cursor: pointer;
+}
+
+.header .menu li:hover {
+    background: #ffbb42; /*背景颜色*/
+    color: #fff; /*字体颜色*/
+}
+
+.header .menu li:hover > a{
+    color: #fff;
+}
+
+.header .menu li:first-child {
+    background: #ffbb42; /*背景颜色*/
+    color: #fff; /*字体颜色*/
+}
+
+.banner {
+    background: url("images/banner.jpg") no-repeat top;
+    background-size: contain;
+    margin: 0 auto; /*屏幕水平居中*/
+    width: 100%;
+    height: 589px;
+}
+
+.banner .line {
+    width: 625px; /*线长度*/
+    height: 2px; /*在这里为厚度*/
+    background: #fff; /*线的颜色*/
+    margin: 0 auto; /*居中*/
+    position: relative;
+    top: 40%; /*强行挪*/
+}
+
+.banner .text {
+    font-size: 28px;
+    color: #fff;
+    width: 100%;
+    text-align: center; /*字居中不用margin*/
+    position: relative;
+    top: 43%;
+}
+
+.banner .line1 {
+    top: 47%;
+}
+
+.banner .text1 {
+    font-size: 32px;
+    top: 54%;
+}
+
+.banner .circle { /*包括圆圈的div*/
+    width: 78px;
+    height: 18px;
+    margin: 0 auto;
+    position: relative;
+    top: 65%;
+}
+
+.banner .circle div { /*内部三个圆圈*/
+    width: 14px; /*宽度(即直径，去掉边框的厚度*2)*/
+    height: 14px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    float: left;
+    margin: 0 4px;
+    cursor: pointer; /*更改鼠标指针（pointer为手，default为默认）*/
+}
+
+.banner .circle div:first-child { /*第一个调色*/
+    border: 2px solid #1ca8dd;
+}
+
+.aboutus { /*以下为：关于我们*/
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+.aboutus .title { /* “关于我们” 的 标题*/
+    font-size: 28px;
+    color: #394b50;
+    width: 100%;
+    text-align: center; /*文字水平居中*/
+    font-weight: bold; /*加粗*/
+}
+
+.aboutus .about-text { /*标题下面的文字*/
+    font-size: 16px;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.aboutus .content {
+    width: 1220px;
+    height: 355px;
+    margin: 0 auto;
+}
+
+.aboutus .content .container { /*容器*/
+    width: 50%;
+    float: left;
+    height: auto;
+    margin-top: 15px;
+}
+
+.aboutus .content .container .logo { /*容器*/
+    width: 50px;
+    height: 50px;
+}
+
+.aboutus .content .container .logo1 {
+    background: url("images/aboutus-icon1.png") no-repeat top;
+}
+
+.aboutus .content .container .logo2 {
+    background: url("images/aboutus-icon2.png") no-repeat top;
+}
+
+.aboutus .content .container .logo3 {
+    background: url("images/aboutus-icon3.png") no-repeat top;
+}
+
+.aboutus .content .container .logo4 {
+    background: url("images/aboutus-icon4.png") no-repeat top;
+}
+
+.aboutus .content .container .smalltitle {
+    color: #394b50;
+    font-size: 18px;
+    font-weight: bold;
+    width: calc(100% - 85px);
+    float: right;
+    margin-bottom: 10px;
+}
+
+.aboutus .content .container .text {
+    font-size: 14px;
+    color: #545454;
+    width: calc(100% - 85px);
+    float: right;
+}
+
+.newsCenter {
+    width: 100%;
+}
+
+.newsCenter .image {
+    background: url("images/news-center.png") no-repeat;
+    background-size: contain;
+    width: 50%; /*占用一半*/
+    float: left;
+}
+
+.newsCenter .right {
+    width: 50%;
+    background: #ffc155;
+    float: right;
+}
+
+.newsCenter .right .title {
+    font-size: 28px;
+    color: #fff;
+    margin-left: 8.7%;
+    margin-top: 16%;
+
+}
+
+.newsCenter .right .zzz {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 8.7%;
+    margin-top: 4%;
+}
+
+.newsCenter .right .button {
+    width: 117px;
+    height: 37px;
+    border: 1px solid #949494;
+    color: #fff;
+    text-align: center; /*水平居中*/
+    line-height: 37px; 
+    cursor: pointer;
+    margin-left: 8.7%;
+    margin-top: 8%;
+}
+
+.productDisplay{
+    width: 100%;
+    color: #e7edf3;
+    background: #e7edf3;
+}
+
+.productDisplay .title{
+    color: #394b50;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.productDisplay .content{
+    width: 100%;
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.productDisplay .image-contain{
+    width: 1220px;
+    height: 950px;
+    margin: 0 auto;
+    color: #e7edf3;
+}
+
+.productDisplay .image-contain>div{/*全部应用这个样式*/
+    float: left;
+    margin: 10px 20px;/*两个参数时：第一个为上下边距，第二个为左右边距*/
+}
+
+.productDisplay .image{
+    background: url("images/LED模板_03.jpg")no-repeat;
+    background-size: contain;
+    width:365px;
+    height: 398px;
+   
+}
+
+.productDisplay .image2{
+    background: url("images/LED模板_05.jpg")no-repeat;
+}
+
+.productDisplay .image3{
+    background: url("images/LED模板_08.jpg")no-repeat;
+}
+
+.productDisplay .image-contain .text{
+    width:365px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+}
+
+.serviceAndSupport{
+    width: 100%;
+}
+
+.serviceAndSupport .title{
+    color: #394b50;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.serviceAndSupport .content{
+    width: 100%;
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.serviceAndSupport .image{
+    background: url("images/serviceAndSupport.png") no-repeat;
+    width: 142px;
+    height: 142px;
+    margin: 40px auto;
+}
+
+.serviceAndSupport .ljjsb{
+    font-size: 14px;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.serviceAndSupport .ljjzz{
+    color:#f7df72;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+
+.photo {
+    width: 100%;
+    background: #ffc155;
+}
+
+.photo .title{
+    color: #394b50;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.photo .content{
+    width: 100%;
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.photo .image-contain{
+    width: 1220px;
+    height: 470px;
+    margin: 0 auto;
+    color: #e7edf3;
+}
+
+.photo .image-contain>div{/*全部应用这个样式*/
+    float: left;
+    margin: 10px 20px;/*两个参数时：第一个为上下边距，第二个为左右边距*/
+}
+
+.photo .image{
+    background: url("images/LED模板_03.jpg") no-repeat;
+    width:365px;
+    height: 398px;
+}
+
+.photo .image2{
+    background: url("images/LED模板_05.jpg") no-repeat;
+}
+
+.photo .image3{
+    background: url("images/LED模板_08.jpg") no-repeat;
+}
+
+.contactUs{
+    width: 100%;
+}
+
+.contactUs .image{
+    background: url("images/1111.png") no-repeat;
+    background-size: contain;
+    margin: 0 auto; /*屏幕水平居中*/
+    width: 1920px;
+    height: 630px;
+}
+
+.contactUs .image .title{
+    color: #fff;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.contactUs .image .aaaa{
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin-top:30px;
+}
+
+.contactUs .input {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 67px;
+}
+
+/*以下四项：更改placeholder颜色*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #e7edf3;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #e7edf3;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #e7edf3;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #e7edf3;
+}
+
+.contactUs .input>input{
+    width: 280px;
+    font-size: 16px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.7);/*rgba，前三项与rgb一致，a为alpha，即透明度*/
+    border: 0;/*清除默认边框*/
+    outline: none;/*清除蓝线*/
+    padding-left: 10px;
+}
+
+.contactUs .input>input:nth-child(1){
+    float: left;
+}
+
+.contactUs .input>input:nth-child(2){
+    float: right;
+}
+
+.contactUs .input>input:nth-child(3){
+    float: left;
+    margin-top: 21px;
+    width: calc(100% - 10px);
+}
+
+.contactUs .input>textarea{
+    float: left;
+    margin-top: 21px;
+    width: calc(100% - 10px);
+    height: 160px;
+    resize: none;
+    background: rgba(255, 255, 255, 0.7);/*rgba，前三项与rgb一致，a为alpha，即透明度*/
+    border: 0;/*清除默认边框*/
+    outline: none;/*清除蓝线*/
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Microsoft Yahei UI';
+    padding-top: 10px;
+}

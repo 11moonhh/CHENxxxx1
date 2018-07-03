@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+        var resize = function () {
+            var banner = document.getElementsByClassName("banner")[0];
+            banner.style.height = banner.offsetWidth * 589 / 1920 + "px";
+            var newsCenterImage = document.getElementById("newsCenterImage");
+            newsCenterImage.style.height = newsCenterImage.offsetWidth * 623 / 960 + "px";
+            var newsCenterRight = document.getElementById("newsCenterRight");
+            newsCenterRight.style.height = newsCenterImage.style.height;
+            var newsCenter = document.getElementsByClassName("newsCenter")[0];
+            newsCenter.style.height = newsCenterImage.style.height;
+        }
+        window.onresize = resize;
+        window.onload = function () {
+            resize();
+            resize();
+        };
+    </script>
+</head>
+
+<body>
+<div class="header">
+    <div class="container">
+        <div class="logo">
+        </div>
+        <ul class="menu">
+            <li> 首页</li>
+            <li><a href="#aboutus">关于我们</a></li>
+            <li><a href="#newsCenterImage">新闻中心</a></li>
+            <li><a href="#productDisplay">产品展示</a></li>
+            <li><a href="#">服务与支持</a></li>
+            <li><a href="#">相册</a></li>
+            <li><a href="#">视频</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <!--图片-->
+    <div class="line"></div><!--线-->
+    <div class="text">科技改变世界</div>
+    <div class="line line1"></div><!--线-->
+    <div class="text text1">Technology has changed the world</div>
+    <div class="circle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<div id="aboutus" class="aboutus"><!--关于我们-->
+    <div class="title">关于我们</div><!--关于我们 的标题-->
+    <div class="about-text">日光灯管两端装有灯丝，玻璃管内壁涂有一层均匀的薄<br/>毫米汞柱以后充入少量惰性气体</div><!--上面那个标题下面的文字-->
+    <div class="content"><!--用于显示下面四个内容-->
+        <div class="container"><!--容器（共4个，第1个）-->
+            <div class="logo logo1"></div><!--logo，顺序同上-->
+            <div class="smalltitle">精确性</div>
+            <div class="text">很多人对 NFC
+                耳熟能详，不过对令牌技术可能就没那么了解了。使用这一技术，用户就无需通过无线传输银行卡账号、信用卡卡号、密码等重要信息，信息被盗取、窃取的风险降低，移动支付也更加安全。很多金融机构往往会采用令牌技术，因为该技术生成的安全码比较复杂，且是一次性的，就算恶意的第三方拦截到这一信息,
+                也无法伪造从网页布局到元素的样式设定，从动画到交互，铱王星为您提供全自由度的设计掌控，让您的网站永远不过时！
+            </div>
+        </div>
+        <div class="container"><!--容器（共4个，第1个）-->
+            <div class="logo logo2"></div><!--logo，顺序同上-->
+            <div class="smalltitle">便携性</div>
+            <div class="text">很多人对 NFC
+                耳熟能详，不过对令牌技术可能就没那么了解了。使用这一技术，用户就无需通过无线传输银行卡账号、信用卡卡号、密码等重要信息，信息被盗取、窃取的风险降低，移动支付也更加安全。很多金融机构往往会采用令牌技术，因为该技术生成的安全码比较复杂，且是一次性的，就算恶意的第三方拦截到这一信息,
+                也无法伪造从网页布局到元素的样式设定，从动画到交互，铱王星为您提供全自由度的设计掌控，让您的网站永远不过时！
+            </div>
+        </div>
+        <div class="container"><!--容器（共4个，第1个）-->
+            <div class="logo logo3"></div><!--logo，顺序同上-->
+            <div class="smalltitle">全能性</div>
+            <div class="text">很多人对 NFC
+                耳熟能详，不过对令牌技术可能就没那么了解了。使用这一技术，用户就无需通过无线传输银行卡账号、信用卡卡号、密码等重要信息，信息被盗取、窃取的风险降低，移动支付也更加安全。很多金融机构往往会采用令牌技术，因为该技术生成的安全码比较复杂，且是一次性的，就算恶意的第三方拦截到这一信息,
+                也无法伪造从网页布局到元素的样式设定，从动画到交互，铱王星为您提供全自由度的设计掌控，让您的网站永远不过时！
+            </div>
+        </div>
+        <div class="container"><!--容器（共4个，第1个）-->
+            <div class="logo logo4"></div><!--logo，顺序同上-->
+            <div class="smalltitle">安全性</div>
+            <div class="text">很多人对 NFC
+                耳熟能详，不过对令牌技术可能就没那么了解了。使用这一技术，用户就无需通过无线传输银行卡账号、信用卡卡号、密码等重要信息，信息被盗取、窃取的风险降低，移动支付也更加安全。很多金融机构往往会采用令牌技术，因为该技术生成的安全码比较复杂，且是一次性的，就算恶意的第三方拦截到这一信息,
+                也无法伪造从网页布局到元素的样式设定，从动画到交互，铱王星为您提供全自由度的设计掌控，让您的网站永远不过时！
+            </div>
+        </div>
+    </div>
+</div>
+<div class="newsCenter"><!--新闻中心-->
+    <div id="newsCenterImage" class="image"></div><!--960 623-->
+    <div id="newsCenterRight" class="right">
+        <div class="title">新闻中心</div>
+        <div class="zzz">很多人对 NFC
+            耳熟能详，不过对令牌技术可能就没那么了解了。使用这一技术，用户就无需通过无线传输银行卡账号、信用卡卡号、密码等重要信息，信息被盗取、窃取的风险降低，移动支付也更加安全。很多金融机构往往会采用令牌技术，因为该技术生成的安全码比较复杂，且是一次性的，就算恶意的第三方拦截到这一信息,
+            也无法伪造从网页布局到元素的样式设定，从动画到交互，铱王星为您提供全自由度的设计掌控，让您的网站永远不过时！
+        </div>
+        <div class="button">查看详情</div><!--117 37-->
+    </div>
+</div>
+<div class="productDisplay" id="productDisplay"><!--产品展示-->
+    <div class="title">产品展示</div>
+    <div class="content">日光灯管两端装有灯丝，玻璃管内壁涂有一层均匀的薄<br />毫米汞柱以后充入少量惰性气体</div>
+    <div class="image-contain">
+        <div id="productDisplay" class="image"></div>
+        <div id="productDisplay" class="image image2"></div>
+        <div id="productDisplay" class="image image3"></div>
+        <div class="text">产品名称</div>
+        <div class="text">产品名称</div>
+        <div class="text">产品名称</div>
+        <div id="productDisplay" class="image image"></div>
+        <div id="productDisplay" class="image image2"></div>
+        <div id="productDisplay" class="image image3"></div>
+        <div class="text">产品名称</div>
+        <div class="text">产品名称</div>
+        <div class="text">产品名称</div>
+    </div>
+    
+    
+</div>
+<div class="serviceAndSupport">
+    <div class="title">服务与支持</div>
+    <div class="content">日光灯管两端装有灯丝，玻璃管内壁涂有一层均匀的薄</div>
+    <div class="image"></div>
+    <div class="ljjsb">其方向与电流的方向相从而产生感应电动势，其方向与电流的方向相反<br />因而阻碍着电流变化</div>
+    <div class="ljjzz">☆ ☆ ☆ ☆ ☆</div>
+
+</div>
+
+<div class="photo">
+    <div class="title">相册</div>
+    <div class="content">!!!</div>
+    <div class="image-contain">
+        <div id="photo" class="image"></div>
+        <div id="photo" class="image image2"></div>
+        <div id="photo" class="image image3"></div>
+    </div>
+</div>
+
+<div class="contactUs">
+    <div id="contactUs" class="image">
+        <div class="title">联系我们</div>
+        <div class="aaaa">日光灯管两端装有灯丝，玻璃管内壁涂有一层均匀的薄</div>
+        <!-- 67 620 -->
+        <div class="input"><!--新建个div包括下面输入框-->
+            <input placeholder="君の名は？" type="text">
+            <input placeholder="您的邮箱" type="text">
+            <input placeholder="您的地址" type="text">
+            <textarea placeholder="留言" type="text"></textarea>>
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+</body>
+</html>
