@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相等运算符</title>
+</head>
+<body>
+    <script>
+        /*
+        相等运算符 用来比较两个值是否相等
+            如果相等 返回true 否则返回false
+
+            使用 == 来做相等运算
+                -当使用==来比较两个值时
+                如果类型不同 则会自动类型转换 再比较
+                字符串==数字 将字符串转换成数字
+                布尔值==字符串 将布尔值和字符串都转换成数字
+
+            使用 != 来做不相等运算
+                不相等用来判断两个值是否相等
+                不相等返回true 否则返回false
+                不相等也会对变量进行自动的类型转换 转换后相等也会返回false
+
+             ===  全等
+                    -用来判断两个值是否全等 和相等类似
+                     不会类型转换 如果值不相等 直接返回false
+
+             !==  不全等
+                     -用来判断两个值是否不全等 不做类型自动转换
+                     如果两个值不相同 直接返回true
+
+
+                undefined 衍生自 null
+                所以这两个值做相等判断时 会返回true
+
+
+                NaN不和任何值相等 包括本身
+
+               可以通过isNaN*()函数来判断一个值是否是NaN
+                         */
+
+        //console.log(1==1);//true
+
+        var a = 10 ;
+        //console.log(a==4); //false
+        //console.log("1"== 1); //true
+        //console.log(true=="1"); //true
+        //console.log(null==0); //false
+        //console.log(undefined==null);//true
+        //console.log(NaN==NaN);//false
+        //console.log(isNaN(a));
+        console.log(null = undefined);//相等不全等
+    </script>
+</body>
+</html>

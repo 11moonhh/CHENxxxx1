@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自增练习</title>
+</head>
+<body>
+    <script>
+        var n1 = 10,n2 = 20 ;
+
+        var n = n1++ ; //n1=11(立刻自增)  n1++=10(a++是原变量的值)
+        console.log('n = ' + n );// 10
+        console.log('n1 = ' + n1 ); // 11
+
+        n = ++n1 ; // n1=12 ++n1=12（++a是新值） n=12
+        console.log('n = ' + n );//12
+        console.log('n1 = ' + n1 );//12
+
+        n = n2--;//n2--=20(a--是原变量的值) n=20 n2=19
+        console.log(' n = ' + n );//20
+        console.log(' n2 = ' + n2 );//19
+
+        n = --n2 ;//--n2=18 n2=18
+        console.log('n = ' + n); //18
+        console.log('n2 = ' + n2 ); //18
+    </script>
+</body>
+</html>

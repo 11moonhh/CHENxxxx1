@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch练习</title>
+</head>
+<body>
+    <script>
+        /*
+        对于成绩大于60分的输出合格  低于60分的输出不合格
+
+
+
+         */
+
+        var score = +prompt("请输入成绩：")
+
+        /*switch(parseInt(score/10)){
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+                alert("合格");
+                break;
+            default:
+                alert("不合格");
+                break;
+        }
+        */
+
+        switch(true){
+            case score >= 60:
+                alert("合格");
+                break;
+            default:
+               alert("不合格");
+                break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Test</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <!--<script type="text/javascript" src="test.js"></script>-->
+</head>
+
+    <script>
+        //任何数据类型+一个""（空串）即可转换为String
+       var str = "11111，" +
+                 "22222," +
+                 "33333," +
+                 "44444"
+
+
+       var result = 123 + "1" ;
+       //任何值和字符串相加都会转换为字符串，并做拼串操作
+        result = 1 + 2 +"3"
+        //从左到右运算 结果是"33"
+
+        result = 100 - 5 ;
+
+        result = 100 - true;//true = 1
+        result = 100 - "1" ; //除了+，其他都是string转换成number
+
+        result = 6 * 9;
+        result = 2 * undefined ; // undefind转换成Number NaN
+
+        result = 3 / 2 ;
+        /*任何值- * / 运算都会自动转换成Number
+        可以通过一个值-0 *1 /1将其转换成Number
+         */
+        // % 取模运算
+        result = 9 % 3;// 9/3取余数
+        console.log(result);
+    </script>
+    <body>
+
+    </body>
+</html> 
