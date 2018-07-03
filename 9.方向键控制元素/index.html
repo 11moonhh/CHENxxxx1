@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class= "bigSquare">
+    <div id="square" style="left: 0;top: 0;"> </div>
+</div>
+
+<div><button style="margin-left:15px;" onclick="move(1)">W</button><br>
+    <button onclick="move(3)">A</button>
+    <button onclick="move(2)">S</button>
+    <button  onclick="move(4)">D</button><br>
+</div>
+
+<script>
+    function move (fangxiang) {
+        var x = document.getElementById("square");
+        var j = x.style.top;
+        var k = x.style.left;
+        j = parseInt(j.substr(0,j.length-2));
+        k = parseInt(k.substr(0,k.length-2));
+
+
+        switch(fangxiang)
+        {
+            case 1:
+                x.style.top=(j-10)+"px";
+                break;
+            case 2:
+                x.style.top=(j+10)+"px";
+                break;
+            case 3:
+                x.style.left=(k-10)+"px";
+                break;
+            case 4:
+                x.style.left=(k+10)+"px";
+                break;
+        }
+    }
+
+
+</script>
+</body>
+</html>
